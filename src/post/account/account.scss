@@ -1,0 +1,22 @@
+@import "src/styles";
+
+.c_account {
+	margin: .5rem;
+	padding: .25rem;
+	box-sizing: border-box;
+
+	&__text {
+		font-size: 1.25rem;
+		text-align: center;
+
+		&__username {
+			color: #1e46a0;
+			font-weight: bold;
+			margin: 0 .5rem;
+		}
+	}
+
+	&__logout-button {
+		@include button;
+	}
+}

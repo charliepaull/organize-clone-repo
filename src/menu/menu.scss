@@ -1,0 +1,17 @@
+@import "src/styles";
+
+.c_menu {
+	@include page;
+
+	&__link {
+		@include button;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+
+		&--hidden {
+			display: none;
+		}
+	}
+}

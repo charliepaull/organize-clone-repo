@@ -1,0 +1,79 @@
+@import "src/styles";
+
+.c_login {
+	@include page;
+
+	&--embed {
+		border: none;
+		padding: .5rem;
+	}
+
+	&__headline {
+		text-align: center;
+	}
+
+	&__form {
+		@include form;
+
+		&__input {
+			@include input;
+		}
+	}
+
+	&__password-reset-link {
+		text-decoration: none;
+		color: #1e46a0;
+	}
+
+	&__button {
+		@include button;
+	}
+}
+
+.c_request-reset {
+	@include page;
+
+	&__headline {
+
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__form {
+		@include form;
+
+		&__input {
+			@include input;
+		}
+	}
+
+	&__button {
+		@include button;
+	}
+}
+
+.c_reset {
+	@include page;
+
+	&__headline {
+
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__form {
+		@include form;
+
+		&__input {
+			@include input;
+		}
+	}
+
+	&__button {
+		@include button;
+	}
+}

@@ -1,0 +1,19 @@
+@import "src/styles";
+
+.c_story {
+	@include page;
+
+	&__input-container {
+		position: relative;
+	}
+
+	&__date-location-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 600px;
+	}
+}

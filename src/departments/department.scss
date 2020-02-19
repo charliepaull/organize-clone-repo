@@ -1,0 +1,59 @@
+@import "src/styles";
+
+.c_department {
+  @include page;
+
+    &__header {
+        margin: 1.25rem 0 0 0.9375rem;
+    }
+
+    &__row {
+
+        &__department-data {
+            padding: 0.625rem 0 0 0;
+        }
+
+        &__complaints {
+
+            &__icon {
+                // this will have a mixin
+            }
+        }
+
+        &__location {
+            margin-right: 3rem;
+
+            &__icon {
+                // this will have a mixin
+            }
+        }
+
+    }
+
+    &__complaint-button {
+      @include button;
+    }
+
+    &__banner {
+        width: 100%;
+        height: 3rem;
+        background-color: #d16230;
+        text-align: center;
+    }
+
+    &__filters-container {
+
+        &__filter {
+
+            &--active {
+            }
+        }
+    }
+
+    &__department-preview-container {
+        list-style-type: none;
+
+        &__department-previous-outer-container {
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.c_donate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+	&__title {
+		font-size: 2rem;
+		font-weight: bold;
+		margin: .5rem .25rem .5rem .25rem;
+	}
+
+	&__donation-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		&__values-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: .25rem;
+			height: 2.5rem;
+			box-sizing: border-box;
+
+			&__suggested-value {
+				flex-grow: 1;
+				margin: .25rem;
+				padding: .5rem .25rem .5rem .25rem;
+				border: 1px solid #e5e5e5;
+				border-radius: 2px;
+				font-weight: bold;
+				font-size: .8rem;
+			}
+
+			&__value-input {
+				flex-grow: 1;
+				max-width: 100px;
+				font-size: .75rem;
+				font-weight: bold;
+				padding: 0 .25rem 0 .25rem;
+				border-radius: 2px;
+				border: none;
+				background-color: #8ec7de;
+				height: 100%;
+				color: white;
+				text-align: center;
+			}
+		}
+	}
+}

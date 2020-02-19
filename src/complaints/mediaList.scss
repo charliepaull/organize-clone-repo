@@ -1,0 +1,35 @@
+
+.c_media-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0 .5rem;
+	box-sizing: border-box;
+
+	&__control {
+		height: 2.5rem;
+		width: 2.5rem;
+		padding: .25rem;
+		box-sizing: border-box;
+		background: none;
+		border: none;
+		cursor: pointer;
+		flex-shrink: 0;
+
+		&__arrow {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__media-container {
+		flex-shrink: 1;
+
+		&__media {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+@import "src/styles";
+
+@mixin title {
+	text-align: center;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+@mixin text {
+	padding: 0 2rem;	
+}
+
+@mixin item {
+	padding-right: .5rem;
+}
+
+.c_terms {
+	@include page;
+
+	&__title {
+		@include title;
+	}
+
+	&__subtitle {
+		@include title;
+	}
+
+	&__text {
+		@include text;
+	}
+
+	&__list {
+		&__item {
+			@include item;
+		}
+	}
+}
+
+.c_privacy {
+	@include page;
+
+	&__title {
+		@include title;
+	}
+
+	&__subtitle {
+		@include title;
+	}
+
+	&__text {
+		@include text;
+	}
+
+	&__list {
+		&__item {
+			@include item;
+		}
+	}
+}
